@@ -1,0 +1,12 @@
+[Unit]
+Description=hello
+After=network.target
+
+[Service]
+ExecStart=/opt/bob/bin/hello.sh
+User=bob
+Group=bob
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
